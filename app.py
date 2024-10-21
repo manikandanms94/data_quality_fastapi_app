@@ -15,7 +15,7 @@ def convert_numpy_types(data):
         return data.tolist()  # Convert numpy arrays to lists
     return data
 
-# Recursive function to handle both lists and dictionaries
+# Recursive function to handle both lists and dictionaries and lists
 def process_report(report):
     if isinstance(report, dict):
         return {key: process_report(value) for key, value in report.items()}
