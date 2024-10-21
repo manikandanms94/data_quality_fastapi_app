@@ -1,0 +1,8 @@
+column,null_count,empty_count,unique_count,total_records,data_type,missing_percentage,duplicates
+Id,0,0,4,5,int64,0.0,1
+Name,0,0,5,5,object,0.0,0
+Mobile,1,0,3,5,float64,20.0,1
+Email,0,0,5,5,object,0.0,0
+Country,0,0,2,5,object,0.0,3
+Gender,0,0,2,5,object,0.0,3
+Status,3,0,2,5,object,60.0,2
