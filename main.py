@@ -3,7 +3,6 @@ from typing import List, Dict
 
 
 def load_file(file, file_type: str) -> pd.DataFrame:
-    """ Load the uploaded file as a pandas DataFrame based on file type. """
     if file_type == "csv":
         return pd.read_csv(file)
     elif file_type == "parquet":
@@ -13,7 +12,6 @@ def load_file(file, file_type: str) -> pd.DataFrame:
 
 
 def generate_quality_report(df: pd.DataFrame) -> List[Dict]:
-    """ Generate a data quality report from a pandas DataFrame. """
     total_records = len(df)
     report = []
 
@@ -40,5 +38,4 @@ def generate_quality_report(df: pd.DataFrame) -> List[Dict]:
 
 
 def save_report(report: List[Dict], output_file: str):
-    """ Save the quality report to a local CSV file. """
     pd.DataFrame(report).to_csv(output_file, index=False)
